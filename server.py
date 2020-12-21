@@ -27,6 +27,7 @@ def broadcast(message):
     for client in clients:
         client.send(message)
 
+
 # When a client does the /who command
 def get_nicknames():
     string_of_nicknames = f"{threading.active_count() - 1} user/s in the chatroom: "
