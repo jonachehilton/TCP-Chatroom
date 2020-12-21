@@ -34,8 +34,6 @@ def write():
         if message.startswith("/"):
             if message[1:4] == "who":
                 client.send(message.encode(FORMAT))
-            if message[1:3] == "pm":
-                client.send(message.encode(FORMAT))
 
             else:
                 print("Not a valid command")
